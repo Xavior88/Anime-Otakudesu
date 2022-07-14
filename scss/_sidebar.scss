@@ -1,0 +1,68 @@
+@import "root";
+@import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner&display=swap');
+
+.container-main{
+    padding: 20px;
+    display: grid;
+    margin-top: 5rem;
+    grid-template-columns: 30% 30% 20% 20%;
+    grid-template-areas: 'sidebar sidebar sidebar-right sidebar-right' 'sidebar-buttom sidebar-buttom sidebar-right sidebar-right'  ;
+}
+
+.sidebar{
+    padding: 5vh;
+    grid-area: sidebar;
+}
+
+.sidebar .text-content{
+    border-radius: 5px 5px 0 0;
+    width: 40vh;
+    background-color: rgb(62, 57, 70);
+    padding: 3vh;
+    color: map-get($map:$variable , $key: "light" );
+    font-family: Roboto,Segoe UI,Arial,sans-serif;
+}
+.sidebar .text-content h3{
+    padding-left: 2vh;
+    font-size: 17px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+// .sidebar .text-content::before{
+//     content: "";
+//     display: block;
+//     width: 0;
+//     height: 0;
+//     border-top: 20px solid transparent;
+//     border-left: 20px solid  rgb(62, 57, 70);
+//     position: absolute;
+//     top: 39vh;
+//     left:48vh;
+// }
+
+.item-image{
+    transition: all 0.3s;
+}
+.item-image:hover img{
+    transform: scale(1.05);
+}
+.item-image img{
+    width: 100%;
+    transition: all 0.3s;
+}
+
+.image-content{
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 20px;
+    border: 3px solid  rgb(62, 57, 70);
+}
+
+.image-content p{
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+    color: map-get($map:$variable , $key: "light" );
+    font-family: Roboto,Segoe UI,Arial,sans-serif;
+}

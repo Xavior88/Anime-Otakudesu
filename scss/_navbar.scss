@@ -1,0 +1,126 @@
+@import "root";
+@import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner&display=swap');
+.navbar-start{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    padding: 20px 0;
+    border-bottom: 2px solid  map-get($map:$variable , $key: "light" );
+    align-items: center;
+    background-color: map-get($map:$variable, $key: 'dark');
+    box-shadow: 4px 4px 4px map-get($map:$variable , $key: 'light' );
+}
+
+.logo img{
+    width: 220px;
+    height: 60px;
+}
+
+.wrapper-list{
+    margin-top: 2vh;
+    padding: 10px;
+    display: flex;
+    width: 60%;
+    justify-content: space-around;
+    
+}
+
+.wrapper-list.active{
+    transform: scaleY(1);
+}
+
+.wrapper-list li{
+    border-radius: 10px;
+    width: 100%;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+
+.wrapper-list li a{
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: Roboto,Segoe UI,Arial,sans-serif;
+    color: map-get($map:$variable , $key: "light");
+    transition: all 0.3s;
+    text-decoration: none;
+    list-style: none;
+}
+
+.wrapper-list li a:hover{
+    color: map-get($map:$variable , $key: "primary" );
+}
+.wrapper-list li i{
+    color: map-get($map:$variable , $key: "light" );
+    font-size: 18px;
+    padding: 0 10px;
+}
+
+.search-button {
+    width: 15rem;
+    position: absolute;
+    top: 20%;
+    right: 10%;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 500;
+    transition: .2s linear;
+    transform: scaleY(0);
+    transform-origin: top;
+}
+.search-button.active{
+    transform: scaleY(1);
+}
+
+.icons{
+    color: map-get($map:$variable , $key: "light" );
+    display: flex;
+    gap: 50px;
+}
+
+.icons i:nth-child(1){
+    font-size: 25px;
+    transition: all 0.3s;
+}
+
+.icons i:nth-child(1):hover{
+    color: map-get($map:$variable , $key: "primary" );
+}
+.icons i:nth-child(2){
+    display: none;
+    font-size: 25px;
+    transition: all 0.3s;
+}
+
+.icons i:nth-child(2):hover{
+    color: map-get($map:$variable , $key: "primary" );
+}
+
+.search-button{
+    border-top: 2px solid rgb(255, 166, 1);
+    box-shadow: 4px 4px 4px map-get($map:$variable , $key: 'light' );
+    border-bottom: 2px solid rgb(200, 255, 1);
+    padding: 20px;
+    background-color: rgb(29, 30, 31);
+}
+
+.search-button input{
+    height: 100%;
+    width: 100%;
+    padding: 0.7rem;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 5px;
+    background-color: map-get($map:$variable , $key: "light" );
+}
+
+.search-button button{
+    background: transparent;
+    border: 0;
+}
+
+
