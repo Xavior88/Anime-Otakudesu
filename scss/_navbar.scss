@@ -26,34 +26,41 @@
 }
 
 .wrapper-list.active{
-    transform: scaleY(1);
+    transform: translateX(0);
+    transition: all 0.8s;
 }
-
+.wrapper-list li:nth-child(1){
+    background-color: rgb(0, 255, 255);
+}
 .wrapper-list li{
     border-radius: 10px;
-    width: 100%;
     text-decoration: none;
     list-style: none;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    transition: all 1s;
+}
+.wrapper-list li:hover{
+    background-color: rgba(7, 255, 255, 0.952);
 }
 
-
+.wrapper-list li a:nth-child(1){
+    color: map-get($map: $variable , $key: 'light');
+}
 
 .wrapper-list li a{
     font-size: 16px;
     text-transform: uppercase;
     font-weight: 600;
     font-family: Roboto,Segoe UI,Arial,sans-serif;
-    color: map-get($map:$variable , $key: "light");
+    color: map-get($map:$variable , $key: "dark");
     transition: all 0.3s;
     text-decoration: none;
     list-style: none;
 }
 
-.wrapper-list li a:hover{
-    color: map-get($map:$variable , $key: "primary" );
-}
 .wrapper-list li i{
-    color: map-get($map:$variable , $key: "light" );
+    color: map-get($map:$variable , $key: "dark" );
     font-size: 18px;
     padding: 0 10px;
 }

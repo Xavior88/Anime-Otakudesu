@@ -9,15 +9,17 @@
 
 .sidebar-buttom .text-content{
     border-radius: 5px 5px 0 0;
-    width: 40vh;
+    width: 60%;
     background-color: rgb(62, 57, 70);
     padding: 3vh;
     color: map-get($map:$variable , $key: "light" );
     font-family: Roboto,Segoe UI,Arial,sans-serif;
 }
 .sidebar-buttom .text-content h3{
+    padding-top: 1vh;
     padding-left: 2vh;
     font-size: 17px;
+    color: map-get($map: $variable , $key: "light");
     text-transform: uppercase;
     font-weight: 600;
 }
