@@ -5,6 +5,7 @@
 .sidebar-right{
     padding: 5vh;
     grid-area: sidebar-right;
+    
 }
 
 .sidebar-right .text-content{
@@ -25,6 +26,7 @@
 
 .content-image{
     border: 3px solid rgb(77, 71, 75);
+    box-shadow: rgb(231, 240, 248) 0px 10px 20px -10px;
 }
 .content-image nav{
     padding: 20px 0;
@@ -82,6 +84,7 @@
     font-size: 20px;
     font-size: 600;
     padding: 5px 20px;
+    
     margin: 1vh 0 3vh 0;
     background-color: aliceblue;
     color: map-get($map:$variable , $key: 'dark' );

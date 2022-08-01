@@ -10,6 +10,7 @@
 }
 
 .sidebar{
+    
     padding: 5vh;
     grid-area: sidebar;
 }
@@ -44,6 +45,7 @@
 }
 
 .image-content{
+    box-shadow: rgb(231, 240, 248) 0px 10px 20px -10px;
     padding: 10px;
     display: grid;
     grid-template-columns: repeat(5,1fr);

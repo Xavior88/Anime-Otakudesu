@@ -1,0 +1,65 @@
+@import "root";
+@import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner&display=swap');
+
+footer{
+    padding: 20px;
+    background-color: #1c1c1c;
+    border-top: 2px solid rgb(255, 255, 255);
+box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+.footer-logo img{
+    width: 200px;
+}
+.container-footer-grid{
+    display: grid;
+    grid-template-columns: 45% 30% 30%;
+}
+
+.footer-text-top p{
+    font-size: 16px;
+    color: map-get($map:$variable , $key: 'light');
+}
+
+.footer-text-bottom p{
+    font-size: 15px;
+    color: map-get($map:$variable , $key: 'light' );
+}
+
+.footer-discord .bxl-discord{
+    font-size: 50px;
+    margin-left: 5vh;
+    margin-bottom: 1vh;
+    color: map-get($map:$variable , $key: 'light' );
+}
+.footer-bottom-end p{
+    font-size: 12px;
+    color: map-get($map:$variable , $key: 'light' );
+}
+
+.content-link-middle{
+    padding-left: 3rem;
+}
+
+.container-middle-footer h4{
+    font-size: 20px;
+    color: map-get($map:$variable , $key: 'light' );
+}
+
+
+
+
+
+
+
+
+.content-link-middle h4{
+    font-size: 20px;
+    color: map-get($map:$variable , $key: 'light' );
+}
+
+.content-link-middle li a{
+    list-style: none;
+    color: rgb(204, 192, 192);
+    text-decoration: none;
+    
+}
